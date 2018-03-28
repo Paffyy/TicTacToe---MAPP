@@ -20,4 +20,9 @@ public class GridSpace : MonoBehaviour {
 		button.interactable = false;
 		gameController.EndTurn();
 	}
+
+    public void testMaster()
+    {
+
+    }
 }
