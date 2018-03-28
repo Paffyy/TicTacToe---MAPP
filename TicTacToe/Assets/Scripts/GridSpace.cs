@@ -21,8 +21,5 @@ public class GridSpace : MonoBehaviour {
 		gameController.EndTurn();
 	}
 
-    public void testMaster()
-    {
-
-    }
+	public void hello()
 }
