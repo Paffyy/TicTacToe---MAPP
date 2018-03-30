@@ -6,8 +6,16 @@ public class GridSpace : MonoBehaviour {
 	
 	public Button button;
 	public Text buttonText;
-
+    public Font font;
 	private GameController gameController;
+
+    void Awake()
+    {
+        //this.buttonText.font = new Font()
+        //{
+
+        //};
+    }
 
 	public void SetGameControllerReference (GameController controller)
 	{
