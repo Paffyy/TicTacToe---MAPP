@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System;
 
-[System.Serializable]
+[Serializable]
 public class Player {
 	public Image panel;
 	public Text text;
 	public Button button;
 }
 
-[System.Serializable]
+[Serializable]
 public class PlayerColor {
 	public Color panelColor;
 	public Color textColor;
@@ -36,9 +36,11 @@ public class GameController : MonoBehaviour {
 		gameOverPanel.SetActive(false);
 		moveCount = 0;
 		restartButton.SetActive(false);
-	}
+        playerX.text.color = Color.red;
+        playerO.text.color = Color.blue;
+    }
 
-	void SetGameControllerReferenceOnButtons ()
+    void SetGameControllerReferenceOnButtons ()
 	{
 		for (int i = 0; i < buttonList.Length; i++)
 		{
@@ -134,8 +136,15 @@ public class GameController : MonoBehaviour {
 
 	void SetPlayerColors (Player newPlayer, Player oldPlayer)
 	{
-		newPlayer.panel.color = activePlayerColor.panelColor;
-		newPlayer.text.color = activePlayerColor.textColor;
+        if (newPlayer.text.text.Contains("X"))
+        {
+            newPlayer.text.color = Color.red;
+        }
+        else
+        {
+            newPlayer.text.color = Color.blue;
+        }
+        newPlayer.panel.color = activePlayerColor.panelColor;
 		oldPlayer.panel.color = inactivePlayerColor.panelColor;
 		oldPlayer.text.color = inactivePlayerColor.textColor;
 	}
