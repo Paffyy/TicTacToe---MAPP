@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class Player {
@@ -184,6 +185,11 @@ public class GameController : MonoBehaviour {
 			buttonList [i].text = "";
 		}
 	}
+
+    public void returnToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 	void SetBoardInteractable (bool toggle)
 	{
