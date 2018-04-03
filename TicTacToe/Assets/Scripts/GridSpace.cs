@@ -7,6 +7,8 @@ public class GridSpace : MonoBehaviour {
 	public Button button;
 	public Text buttonText;
     public Font font;
+    public Color orange;
+    public Color green;
 	private GameController gameController;
 
     void Awake()
@@ -24,14 +26,14 @@ public class GridSpace : MonoBehaviour {
 
 	public void SetSpace()
 	{
-		buttonText.text = gameController.GetPlayerSide();
+        buttonText.text = gameController.GetPlayerSide();
         if (buttonText.text.Contains("X"))
         {
-            buttonText.color = Color.red;
+            buttonText.color = orange;
         }
         else
         {
-            buttonText.color = Color.blue;
+            buttonText.color = green;
         }
         button.interactable = false;
 		gameController.EndTurn();

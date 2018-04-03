@@ -17,7 +17,9 @@ public class PlayerColor {
 }
 
 public class GameController : MonoBehaviour {
-
+    public Color orange;
+    public Color green;
+    public Text winnerText;
 	public Text[] buttonList;
 	public GameObject gameOverPanel;
 	public Text gameOverText;
@@ -26,9 +28,8 @@ public class GameController : MonoBehaviour {
 	public Player playerO;
 	public PlayerColor activePlayerColor;
 	public PlayerColor inactivePlayerColor;
-	public GameObject startInfo;
-
-	private string playerSide;
+    public GameObject startInfo;
+    private string playerSide;
 	private int moveCount;
 
 	void Awake ()
@@ -37,8 +38,8 @@ public class GameController : MonoBehaviour {
 		gameOverPanel.SetActive(false);
 		moveCount = 0;
 		restartButton.SetActive(false);
-        playerX.text.color = Color.red;
-        playerO.text.color = Color.blue;
+        playerX.text.color = orange;
+        playerO.text.color = green;
     }
 
     void SetGameControllerReferenceOnButtons ()
@@ -124,7 +125,7 @@ public class GameController : MonoBehaviour {
 
 	void ChangeSides ()
 	{
-		playerSide = (playerSide == "X") ? "O" : "X";
+		playerSide = (playerSide == "X") ? "N" : "X";
 		if (playerSide == "X")
 		{
 			SetPlayerColors(playerX, playerO);
@@ -139,11 +140,11 @@ public class GameController : MonoBehaviour {
 	{
         if (newPlayer.text.text.Contains("X"))
         {
-            newPlayer.text.color = Color.red;
+            newPlayer.text.color = orange ;
         }
         else
         {
-            newPlayer.text.color = Color.blue;
+            newPlayer.text.color = green;
         }
         newPlayer.panel.color = activePlayerColor.panelColor;
 		oldPlayer.panel.color = inactivePlayerColor.panelColor;
@@ -160,15 +161,26 @@ public class GameController : MonoBehaviour {
 		} 
 		else
 		{
-			SetGameOverText(winningPlayer + " Wins!");
-		}
+            if (winningPlayer == "X")
+            {
+                gameOverText.color = orange;
+                winnerText.color = orange;
+                SetGameOverText(winningPlayer + "");
+            }
+            else
+            {
+                gameOverText.color = green;
+                winnerText.color = green;
+                SetGameOverText(winningPlayer + "");
+            }
+        }
 		restartButton.SetActive(true);
 	}
 
 	void SetGameOverText (string value)
 	{
-		gameOverPanel.SetActive(true);
-		gameOverText.text = value;
+        gameOverText.text = value;
+        gameOverPanel.SetActive(true);
 	}
 
 	public void RestartGame ()
@@ -198,7 +210,6 @@ public class GameController : MonoBehaviour {
 			buttonList[i].GetComponentInParent<Button>().interactable = toggle;
 		}
 	}
-
 	void SetPlayerButtons (bool toggle)
 	{
 		playerX.button.interactable = toggle;
