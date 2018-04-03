@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour {
     public Color orange;
     public Color green;
     public Text winnerText;
+    public Text drawText;
 	public Text[] buttonList;
 	public GameObject gameOverPanel;
 	public Text gameOverText;
@@ -156,7 +157,7 @@ public class GameController : MonoBehaviour {
 		SetBoardInteractable(false);
 		if (winningPlayer == "draw")
 		{
-			SetGameOverText("It's a Draw!");
+			SetDrawText("It's a Draw!");
 			SetPlayerColorsInactive();
 		} 
 		else
@@ -179,11 +180,20 @@ public class GameController : MonoBehaviour {
 
 	void SetGameOverText (string value)
 	{
+        drawText.text = "";
+        winnerText.text = "WINS!";
         gameOverText.text = value;
         gameOverPanel.SetActive(true);
 	}
+    void SetDrawText(string value)
+    {
+        winnerText.text = "";
+        gameOverText.text = "";
+        drawText.text = value;
+        gameOverPanel.SetActive(true);
+    }
 
-	public void RestartGame ()
+    public void RestartGame ()
 	{
 		moveCount = 0;
 		gameOverPanel.SetActive(false);
