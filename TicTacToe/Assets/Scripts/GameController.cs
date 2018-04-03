@@ -17,7 +17,6 @@ public class PlayerColor {
 }
 
 public class GameController : MonoBehaviour {
-
 	public Text[] buttonList;
 	public GameObject gameOverPanel;
 	public Text gameOverText;
@@ -27,7 +26,6 @@ public class GameController : MonoBehaviour {
 	public PlayerColor activePlayerColor;
 	public PlayerColor inactivePlayerColor;
 	public GameObject startInfo;
-
 	private string playerSide;
 	private int moveCount;
 
@@ -124,7 +122,7 @@ public class GameController : MonoBehaviour {
 
 	void ChangeSides ()
 	{
-		playerSide = (playerSide == "X") ? "O" : "X";
+		playerSide = (playerSide == "X") ? "N" : "X";
 		if (playerSide == "X")
 		{
 			SetPlayerColors(playerX, playerO);
@@ -160,9 +158,18 @@ public class GameController : MonoBehaviour {
 		} 
 		else
 		{
-			SetGameOverText(winningPlayer + " Wins!");
-		}
-		restartButton.SetActive(true);
+            if (winningPlayer == "X")
+            {
+                gameOverText.color = new Color(255, 63, 13);
+            }
+            else
+            {
+                gameOverText.color = new Color(67, 209, 5);
+            }
+            SetGameOverText(winningPlayer);
+
+        }
+        restartButton.SetActive(true);
 	}
 
 	void SetGameOverText (string value)
