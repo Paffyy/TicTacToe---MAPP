@@ -27,11 +27,11 @@ public class GridSpace : MonoBehaviour {
 		buttonText.text = gameController.GetPlayerSide();
         if (buttonText.text.Contains("X"))
         {
-            buttonText.color = new Color(255f,63f,13f); 
+            buttonText.color = Color.red;
         }
         else
         {
-            buttonText.color = new Color(67f, 209f, 5f);
+            buttonText.color = Color.blue;
         }
         button.interactable = false;
 		gameController.EndTurn();
