@@ -154,7 +154,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.009731836, g: 0.04883938, b: 0.1102941, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -250,17 +250,17 @@ Prefab:
     - target: {fileID: 224026019951364738, guid: beecf33a3fafa4b139db4c1100412203,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 224026019951364738, guid: beecf33a3fafa4b139db4c1100412203,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -56.600006
+      value: -57.7
       objectReference: {fileID: 0}
     - target: {fileID: 224026019951364738, guid: beecf33a3fafa4b139db4c1100412203,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 128
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224026019951364738, guid: beecf33a3fafa4b139db4c1100412203,
         type: 2}
@@ -311,6 +311,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 449331f00e50dcf4da4d3c6f9882a6d1,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -434,15 +440,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12941177, g: 0.17254902, b: 0.21568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 520e8f83eb1d12248b2f030508fcde30, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -566,6 +572,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc707a01037c4c34d8edb0e8664c293c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -735,7 +747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &411222086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1140,6 +1152,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: abdabf96a398432488ed9a5640f415d7,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -1249,16 +1267,12 @@ Prefab:
       propertyPath: m_Name
       value: Grid space (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 114926374439321504, guid: beecf33a3fafa4b139db4c1100412203,
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
         type: 2}
-      propertyPath: m_Text
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114775578151601756, guid: beecf33a3fafa4b139db4c1100412203,
-        type: 2}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: cf84ee0c5404de145890646ac0a0d853,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -1374,6 +1388,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6215f4b1b75e0d34ab8c02862785c463,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -1499,6 +1519,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a562aa455f75e64993d8eff8ed54baf,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -1853,6 +1879,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6febc2791dcf5f2439d8003097fb1379,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -2234,6 +2266,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c2a70c0abf6bd441b3c56f83391bf6e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
@@ -2495,6 +2533,12 @@ Prefab:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333458657247366, guid: beecf33a3fafa4b139db4c1100412203,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf651ba5c53e8b940b4b5074811903dd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beecf33a3fafa4b139db4c1100412203, type: 2}
   m_IsPrefabParent: 0
