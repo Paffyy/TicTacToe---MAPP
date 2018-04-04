@@ -960,7 +960,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Choose a side
 
-    Save your planet'
+    Conquer planets'
 --- !u!222 &835111438
 CanvasRenderer:
   m_ObjectHideFlags: 0

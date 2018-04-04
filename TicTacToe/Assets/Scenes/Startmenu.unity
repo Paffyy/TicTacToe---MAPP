@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 218}
+  m_AnchoredPosition: {x: 0, y: 181}
   m_SizeDelta: {x: 838.3, y: 170.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211766769
@@ -169,7 +169,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: dba9ec2c5e027b54592c1ca94ab9dabe, type: 3}
-    m_FontSize: 114
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SPACEFLIGHT
+  m_Text: Tic Tac Spaceflight
 --- !u!222 &211766770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: dba9ec2c5e027b54592c1ca94ab9dabe, type: 3}
     m_FontSize: 28
-    m_FontStyle: 0
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
